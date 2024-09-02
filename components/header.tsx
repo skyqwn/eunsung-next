@@ -28,11 +28,11 @@ const Header = () => {
     ];
   }, [pathname]);
   return (
-    <header className="h-[80px] w-screen bg-black/20 backdrop-blur-2xl fixed top-0 left-0 right-0 z-10 flex items-center px-12">
+    <header className="h-[80px] w-screen bg-black/40 backdrop-blur-2xl fixed top-0 left-0 right-0 z-10 flex items-center px-12">
       <nav className="w-full">
         <ul className="flex justify-between items-center w-full">
           <li className="text-4xl">
-            <Link href={"/"}>H3</Link>
+            <Link href={"/"}>EunSung</Link>
           </li>
           <li className="flex gap-5">
             {routes.map((page) => (
