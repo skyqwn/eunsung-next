@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
@@ -31,7 +32,7 @@ const Header = () => {
     <header className="h-[80px] w-screen bg-black/40 backdrop-blur-2xl fixed top-0 left-0 right-0 z-10 flex items-center px-12">
       <nav className="w-full">
         <ul className="flex justify-between items-center w-full">
-          <li className="text-4xl">
+          <li className=" text-lg lg:text-4xl">
             <Link href={"/"}>EunSung</Link>
           </li>
           <li className="flex gap-5">
@@ -41,12 +42,20 @@ const Header = () => {
                 className="hover:text-primary/90 transition-colors ease-in-out"
               >
                 <Link href={page.path}>
-                  <span className={cn(page.isActive && "text-primary")}>
+                  <span
+                    className={cn(
+                      page.isActive && "text-primary",
+                      "hidden lg:block"
+                    )}
+                  >
                     {page.label}
                   </span>
                 </Link>
               </div>
             ))}
+          </li>
+          <li className="lg:hidden">
+            <Menu />
           </li>
         </ul>
       </nav>
