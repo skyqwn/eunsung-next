@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="flex flex-col xl:flex-row items-center gap-12 xl:justify-between">
         <div className="flex-1 flex gap-8">
           {icons.map((icon) => (
-            <Link href={icon.href} key={icon.src}>
+            <Link href={icon.href} key={icon.src} target="_blank">
               <div className="relative size-12 cursor-pointer">
                 <Image
                   src={icon.src}
@@ -36,6 +36,8 @@ const Footer = () => {
             대표: 김종성|경기도 김포시 고촌읍 상미로 10번길 161
             <br />
             개인정보관리책임자: 홍승찬 <br /> 사업자등록번호: 258-19-00601
+            <br />
+            영업시간 09:00 ~ 18:00 | 토,일 휴무
           </p>
         </div>
         <div>
