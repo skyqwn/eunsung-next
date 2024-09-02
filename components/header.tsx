@@ -36,8 +36,11 @@ const Header = () => {
           </li>
           <li className="flex gap-5">
             {routes.map((page) => (
-              <div className="hover:text-primary/90 transition-colors ease-in-out">
-                <Link href={page.path} key={page.label}>
+              <div
+                key={page.label}
+                className="hover:text-primary/90 transition-colors ease-in-out"
+              >
+                <Link href={page.path}>
                   <span className={cn(page.isActive && "text-primary")}>
                     {page.label}
                   </span>
