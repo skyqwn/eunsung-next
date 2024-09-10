@@ -28,7 +28,8 @@ const Footer = () => {
         <div className="flex-1 flex flex-col gap-8">
           <h2 className="text-4xl">H3</h2>
           <p>
-            대표: 김종성 | 경기도 김포시 고촌읍 상미로 10번길 161
+            대표: 김종성 <br />
+            위치: 경기도 김포시 고촌읍 상미로 10번길 161
             <br />
             개인정보관리책임자: 홍승찬 <br /> 사업자등록번호: 258-19-00601
             <br />

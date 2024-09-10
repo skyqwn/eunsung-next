@@ -11,6 +11,7 @@ import {
   motion,
   AnimatePresence,
 } from "framer-motion";
+import Image from "next/image";
 
 const Header = () => {
   const pathname = usePathname();
@@ -111,8 +112,16 @@ const Header = () => {
     >
       <nav className="w-full">
         <ul className="flex justify-between items-center w-full">
-          <li className=" text-3xl lg:text-4xl">
-            <Link href={"/"}>EunSung</Link>
+          <li className=" text-[100px] lg:text-4xl ">
+            <Link href={"/"}>
+              <Image
+                src={"/whitelogo.png"}
+                alt=""
+                width={100}
+                height={100}
+                className="text-4xl text-yellow-500 pt-4"
+              />
+            </Link>
           </li>
           <li className="flex gap-5">
             {routes.map((page) => (

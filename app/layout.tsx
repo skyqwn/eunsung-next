@@ -27,7 +27,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="mt-[80px] p-12 mb-[400px] lg:px-32">{children}</div>
+          <div className="mt-[80px] p-12 mb-[200px] md:mb-[400px] lg:px-32">
+            {children}
+          </div>
           <Footer />
         </ThemeProvider>
       </body>
